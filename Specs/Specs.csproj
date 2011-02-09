@@ -53,8 +53,9 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="TechTalk.SpecFlow">
-      <HintPath>..\packages\SpecFlow.1.4.0\lib\TechTalk.SpecFlow.dll</HintPath>
+    <Reference Include="TechTalk.SpecFlow, Version=1.4.0.0, Culture=neutral, PublicKeyToken=0778194805d6db41, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\TechTalk.SpecFlow.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -64,6 +65,12 @@
       <DependentUpon>BackgroundFeature.feature</DependentUpon>
     </Compile>
     <Compile Include="Background\BackgroundSteps.cs" />
+    <Compile Include="CompareToAssist\CompareTo.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CompareTo.feature</DependentUpon>
+    </Compile>
+    <Compile Include="CompareToAssist\CompareToSteps.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TablesAndAssist\TableScenario.feature.cs">
       <AutoGen>True</AutoGen>
@@ -85,6 +92,10 @@
     <None Include="Background\BackgroundFeature.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>BackgroundFeature.feature.cs</LastGenOutput>
+    </None>
+    <None Include="CompareToAssist\CompareTo.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>CompareTo.feature.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
     <None Include="TablesAndAssist\TableScenario.feature">
