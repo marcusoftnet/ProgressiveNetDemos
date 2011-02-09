@@ -58,6 +58,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Background\BackgroundFeature.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BackgroundFeature.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Background\BackgroundSteps.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestRunner\TestRunnerIsNotImportant.feature.cs">
       <AutoGen>True</AutoGen>
@@ -68,6 +74,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="Background\BackgroundFeature.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>BackgroundFeature.feature.cs</LastGenOutput>
+    </None>
     <None Include="packages.config" />
     <None Include="TestRunner\TestRunnerIsNotImportant.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
