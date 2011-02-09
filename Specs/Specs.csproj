@@ -65,6 +65,14 @@
     </Compile>
     <Compile Include="Background\BackgroundSteps.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tables\TableScenario.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TableScenario.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Tables\TableSteps.cs" />
+    <Compile Include="TestEntities\Person.cs" />
+    <Compile Include="TestEntities\Style.cs" />
     <Compile Include="TestRunner\TestRunnerIsNotImportant.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -79,6 +87,10 @@
       <LastGenOutput>BackgroundFeature.feature.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
+    <None Include="Tables\TableScenario.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>TableScenario.feature.cs</LastGenOutput>
+    </None>
     <None Include="TestRunner\TestRunnerIsNotImportant.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>TestRunnerIsNotImportant.feature.cs</LastGenOutput>
