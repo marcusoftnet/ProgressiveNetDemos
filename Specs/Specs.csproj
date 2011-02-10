@@ -78,6 +78,18 @@
       <DependentUpon>TableScenario.feature</DependentUpon>
     </Compile>
     <Compile Include="TablesAndAssist\TableSteps.cs" />
+    <Compile Include="TagsAndHooks\HooksDemoSteps.cs" />
+    <Compile Include="TagsAndHooks\Hooks.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Hooks.feature</DependentUpon>
+    </Compile>
+    <Compile Include="TagsAndHooks\TagDemoSteps.cs" />
+    <Compile Include="TagsAndHooks\TagDemo.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TagDemo.feature</DependentUpon>
+    </Compile>
     <Compile Include="TestEntities\Person.cs" />
     <Compile Include="TestEntities\Style.cs" />
     <Compile Include="TestRunner\TestRunnerIsNotImportant.feature.cs">
@@ -101,6 +113,14 @@
     <None Include="TablesAndAssist\TableScenario.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>TableScenario.feature.cs</LastGenOutput>
+    </None>
+    <None Include="TagsAndHooks\Hooks.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Hooks.feature.cs</LastGenOutput>
+    </None>
+    <None Include="TagsAndHooks\TagDemo.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>TagDemo.feature.cs</LastGenOutput>
     </None>
     <None Include="TestRunner\TestRunnerIsNotImportant.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
