@@ -9,7 +9,7 @@
 //  </auto-generated>
 // ------------------------------------------------------------------------------
 #region Designer generated code
-namespace Specs.ScenarioOutline
+namespace Specs._10StepTransformation
 {
     using TechTalk.SpecFlow;
     
@@ -17,21 +17,21 @@ namespace Specs.ScenarioOutline
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "1.5.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("Scenario outline")]
-    public partial class ScenarioOutlineFeature
+    [NUnit.Framework.DescriptionAttribute("Step Argument Transformations")]
+    public partial class StepArgumentTransformationsFeature
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
         
-#line 1 "ScenarioOutline.feature"
+#line 1 "StepTransformation.feature"
 #line hidden
         
         [NUnit.Framework.TestFixtureSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Scenario outline", "In order to not have to type the same scenario over and over\nAs a SpecFlow evange" +
-                    "list\nI want to show how to use ScenarioOutline", GenerationTargetLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Step Argument Transformations", "In order to reduce the amount of code and repetitive tasks in my steps\r\nAs a Spec" +
+                    "Flow evanglist\r\nI want to define reusable transformations for my step arguments", GenerationTargetLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -54,25 +54,18 @@ namespace Specs.ScenarioOutline
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Add two positive numbers with many examples")]
-        [NUnit.Framework.TestCaseAttribute("10", "20", "30")]
-        [NUnit.Framework.TestCaseAttribute("20", "20", "40")]
-        [NUnit.Framework.TestCaseAttribute("20", "30", "50")]
-        [NUnit.Framework.TestCaseAttribute("100", "20", "120")]
-        [NUnit.Framework.TestCaseAttribute("1000", "20", "1020")]
-        public virtual void AddTwoPositiveNumbersWithManyExamples(string number1, string number2, string result)
+        [NUnit.Framework.DescriptionAttribute("Steps with non-string arguments")]
+        public virtual void StepsWithNon_StringArguments()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add two positive numbers with many examples", ((string[])(null)));
-#line 8
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Steps with non-string arguments", ((string[])(null)));
+#line 6
 this.ScenarioSetup(scenarioInfo);
+#line 7
+ testRunner.Given("Dan has been registered at date 2003/03/13");
+#line 8
+  testRunner.And("Aslak has been registered at terminal 2");
 #line 9
- testRunner.Given(string.Format("I have entered {0} into the calculator", number1));
-#line 10
- testRunner.And(string.Format("I have entered {0} into the calculator", number2));
-#line 11
- testRunner.When("I press add");
-#line 12
- testRunner.Then(string.Format("the result should be {0} on the screen", result));
+ testRunner.Then("I should be able to see Aslak at terminal 2");
 #line hidden
             testRunner.CollectScenarioErrors();
         }

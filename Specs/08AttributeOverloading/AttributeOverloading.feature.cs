@@ -9,7 +9,7 @@
 //  </auto-generated>
 // ------------------------------------------------------------------------------
 #region Designer generated code
-namespace Specs.Svenska
+namespace Specs._08AttributeOverloading
 {
     using TechTalk.SpecFlow;
     
@@ -17,20 +17,22 @@ namespace Specs.Svenska
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "1.5.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("Summering")]
-    public partial class SummeringFeature
+    [NUnit.Framework.DescriptionAttribute("Attribute overloading")]
+    public partial class AttributeOverloadingFeature
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
         
-#line 1 "Svenska.feature"
+#line 1 "AttributeOverloading.feature"
 #line hidden
         
         [NUnit.Framework.TestFixtureSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("sv-SE"), "Summering", "För att slippa att göra dumma fel\r\nSom räknare\r\nVill jag kunna lägga summera", GenerationTargetLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Attribute overloading", "In order to show that steps can be used with multiple attributes\nAs a SpecFlow Ev" +
+                    "angelist\nI want to show that similar attributes can be applied to the same step " +
+                    "definition", GenerationTargetLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -53,20 +55,26 @@ namespace Specs.Svenska
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Summera 5 och 7 ska vara 12")]
-        public virtual void Summera5Och7SkaVara12()
+        [NUnit.Framework.DescriptionAttribute("Checking number for evenness")]
+        public virtual void CheckingNumberForEvenness()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Summera 5 och 7 ska vara 12", ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Checking number for evenness", ((string[])(null)));
+#line 6
+this.ScenarioSetup(scenarioInfo);
+#line 7
+ testRunner.Given("I have this simple step");
+#line 8
+  testRunner.And("this simple step");
 #line 9
-  this.ScenarioSetup(scenarioInfo);
+  testRunner.And("also this step");
 #line 10
-    testRunner.Given("att jag har knappat in 5");
+ testRunner.When("I do something");
 #line 11
-    testRunner.And("att jag har knappat in 7");
+ testRunner.Then("I could validate that the number 2 is even");
 #line 12
-    testRunner.When("jag summerar");
+  testRunner.And("that the number 4 is even");
 #line 13
-    testRunner.Then("ska resultatet vara 12");
+  testRunner.But("the number 3 is odd");
 #line hidden
             testRunner.CollectScenarioErrors();
         }

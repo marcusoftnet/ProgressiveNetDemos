@@ -1,4 +1,4 @@
-﻿namespace Specs.ContextInjection
+﻿namespace Specs
 {
     public class NestedContext
     {

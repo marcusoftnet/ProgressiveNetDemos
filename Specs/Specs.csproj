@@ -59,141 +59,141 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AttributeOverloading\AttributeOverloading.feature.cs">
+    <Compile Include="08AttributeOverloading\AttributeOverloading.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>AttributeOverloading.feature</DependentUpon>
     </Compile>
-    <Compile Include="AttributeOverloading\AttributeOverloadingSteps.cs" />
-    <Compile Include="Background\BackgroundFeature.feature.cs">
+    <Compile Include="08AttributeOverloading\AttributeOverloadingSteps.cs" />
+    <Compile Include="04Background\BackgroundFeature.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>BackgroundFeature.feature</DependentUpon>
     </Compile>
-    <Compile Include="Background\BackgroundSteps.cs" />
-    <Compile Include="CallingStepsFromSteps\CallingStepsFromSteps.feature.cs">
+    <Compile Include="04Background\BackgroundSteps.cs" />
+    <Compile Include="09CallingStepsFromSteps\CallingStepsFromSteps.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>CallingStepsFromSteps.feature</DependentUpon>
     </Compile>
-    <Compile Include="CallingStepsFromSteps\CallingStepsFromStepDefinitionSteps.cs" />
-    <Compile Include="CompareToAssist\CompareTo.feature.cs">
+    <Compile Include="09CallingStepsFromSteps\CallingStepsFromStepDefinitionSteps.cs" />
+    <Compile Include="06CompareToAssist\CompareTo.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>CompareTo.feature</DependentUpon>
     </Compile>
-    <Compile Include="CompareToAssist\CompareToSteps.cs" />
-    <Compile Include="ContextInjection\ContextInjection.feature.cs">
+    <Compile Include="06CompareToAssist\CompareToSteps.cs" />
+    <Compile Include="11ContextInjection\ContextInjection.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ContextInjection.feature</DependentUpon>
     </Compile>
-    <Compile Include="ContextInjection\FeatureWithADependentContextSteps.cs" />
-    <Compile Include="ContextInjection\FeatureWithARecursiveContextSteps.cs" />
-    <Compile Include="ContextInjection\FeatureWithASingleContextSteps.cs" />
-    <Compile Include="ContextInjection\FeatureWithMultipleContextsSteps.cs" />
-    <Compile Include="ContextInjection\FeatureWithNoContextSteps.cs" />
-    <Compile Include="ContextInjection\NestedContext.cs" />
-    <Compile Include="ContextInjection\SingleContext.cs" />
+    <Compile Include="11ContextInjection\Contexts\NestedContext.cs" />
+    <Compile Include="11ContextInjection\Contexts\SingleContext.cs" />
+    <Compile Include="11ContextInjection\FeatureWithADependentContextSteps.cs" />
+    <Compile Include="11ContextInjection\FeatureWithARecursiveContextSteps.cs" />
+    <Compile Include="11ContextInjection\FeatureWithASingleContextSteps.cs" />
+    <Compile Include="11ContextInjection\FeatureWithMultipleContextsSteps.cs" />
+    <Compile Include="11ContextInjection\FeatureWithNoContextSteps.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ScenarioOutline\ScenarioOutline.feature.cs">
+    <Compile Include="03ScenarioOutline\ScenarioOutline.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ScenarioOutline.feature</DependentUpon>
     </Compile>
-    <Compile Include="ScenarioOutline\ScenarioOutlineTests.cs" />
-    <Compile Include="StepTransformation\Entities\Terminal.cs" />
-    <Compile Include="StepTransformation\Entities\User.cs" />
-    <Compile Include="StepTransformation\StepTransformationSteps.cs" />
-    <Compile Include="StepTransformation\StepTransformation.feature.cs">
+    <Compile Include="03ScenarioOutline\ScenarioOutlineTests.cs" />
+    <Compile Include="10StepTransformation\Entities\Terminal.cs" />
+    <Compile Include="10StepTransformation\Entities\User.cs" />
+    <Compile Include="10StepTransformation\StepTransformationSteps.cs" />
+    <Compile Include="10StepTransformation\StepTransformation.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>StepTransformation.feature</DependentUpon>
     </Compile>
-    <Compile Include="StepTransformation\Transformations\DateConverter.cs" />
-    <Compile Include="StepTransformation\Transformations\TerminalConverter.cs" />
-    <Compile Include="StepTransformation\Transformations\UserConverter.cs" />
-    <Compile Include="Svenska\Svenska.feature.cs">
+    <Compile Include="10StepTransformation\Transformations\DateConverter.cs" />
+    <Compile Include="10StepTransformation\Transformations\TerminalConverter.cs" />
+    <Compile Include="10StepTransformation\Transformations\UserConverter.cs" />
+    <Compile Include="07Svenska\Svenska.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Svenska.feature</DependentUpon>
     </Compile>
-    <Compile Include="Svenska\SvenskaSteg.cs" />
-    <Compile Include="TablesAndAssist\TableScenario.feature.cs">
+    <Compile Include="07Svenska\SvenskaSteg.cs" />
+    <Compile Include="05TablesAndAssist\TableScenario.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>TableScenario.feature</DependentUpon>
     </Compile>
-    <Compile Include="TablesAndAssist\TableSteps.cs" />
-    <Compile Include="TagsAndHooks\HooksDemoSteps.cs" />
-    <Compile Include="TagsAndHooks\Hooks.feature.cs">
+    <Compile Include="05TablesAndAssist\TableSteps.cs" />
+    <Compile Include="02TagsAndHooks\HooksDemoSteps.cs" />
+    <Compile Include="02TagsAndHooks\Hooks.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Hooks.feature</DependentUpon>
     </Compile>
-    <Compile Include="TagsAndHooks\TagDemoSteps.cs" />
-    <Compile Include="TagsAndHooks\TagDemo.feature.cs">
+    <Compile Include="02TagsAndHooks\TagDemoSteps.cs" />
+    <Compile Include="02TagsAndHooks\TagDemo.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>TagDemo.feature</DependentUpon>
     </Compile>
-    <Compile Include="TestEntities\Person.cs" />
-    <Compile Include="TestEntities\Style.cs" />
-    <Compile Include="TestRunner\TestRunnerIsNotImportant.feature.cs">
+    <Compile Include="99TestEntities\Person.cs" />
+    <Compile Include="99TestEntities\Style.cs" />
+    <Compile Include="01TestRunner\TestRunnerIsNotImportant.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>TestRunnerIsNotImportant.feature</DependentUpon>
     </Compile>
-    <Compile Include="TestRunner\TestRunnerDemoSteps.cs" />
+    <Compile Include="01TestRunner\TestRunnerDemoSteps.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="AttributeOverloading\AttributeOverloading.feature">
+    <None Include="08AttributeOverloading\AttributeOverloading.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>AttributeOverloading.feature.cs</LastGenOutput>
     </None>
-    <None Include="Background\BackgroundFeature.feature">
+    <None Include="04Background\BackgroundFeature.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>BackgroundFeature.feature.cs</LastGenOutput>
     </None>
-    <None Include="CallingStepsFromSteps\CallingStepsFromSteps.feature">
+    <None Include="09CallingStepsFromSteps\CallingStepsFromSteps.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>CallingStepsFromSteps.feature.cs</LastGenOutput>
     </None>
-    <None Include="CompareToAssist\CompareTo.feature">
+    <None Include="06CompareToAssist\CompareTo.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>CompareTo.feature.cs</LastGenOutput>
     </None>
-    <None Include="ContextInjection\ContextInjection.feature">
+    <None Include="11ContextInjection\ContextInjection.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>ContextInjection.feature.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
-    <None Include="ScenarioOutline\ScenarioOutline.feature">
+    <None Include="03ScenarioOutline\ScenarioOutline.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>ScenarioOutline.feature.cs</LastGenOutput>
     </None>
-    <None Include="StepTransformation\StepTransformation.feature">
+    <None Include="10StepTransformation\StepTransformation.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>StepTransformation.feature.cs</LastGenOutput>
     </None>
-    <None Include="Svenska\Svenska.feature">
+    <None Include="07Svenska\Svenska.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>Svenska.feature.cs</LastGenOutput>
     </None>
-    <None Include="TablesAndAssist\TableScenario.feature">
+    <None Include="05TablesAndAssist\TableScenario.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>TableScenario.feature.cs</LastGenOutput>
     </None>
-    <None Include="TagsAndHooks\Hooks.feature">
+    <None Include="02TagsAndHooks\Hooks.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>Hooks.feature.cs</LastGenOutput>
     </None>
-    <None Include="TagsAndHooks\TagDemo.feature">
+    <None Include="02TagsAndHooks\TagDemo.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>TagDemo.feature.cs</LastGenOutput>
     </None>
-    <None Include="TestRunner\TestRunnerIsNotImportant.feature">
+    <None Include="01TestRunner\TestRunnerIsNotImportant.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>TestRunnerIsNotImportant.feature.cs</LastGenOutput>
     </None>

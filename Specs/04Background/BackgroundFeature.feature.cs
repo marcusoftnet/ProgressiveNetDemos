@@ -9,7 +9,7 @@
 //  </auto-generated>
 // ------------------------------------------------------------------------------
 #region Designer generated code
-namespace Specs.Background
+namespace Specs._04Background
 {
     using TechTalk.SpecFlow;
     

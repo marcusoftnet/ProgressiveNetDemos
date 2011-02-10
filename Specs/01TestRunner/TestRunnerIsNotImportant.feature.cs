@@ -9,7 +9,7 @@
 //  </auto-generated>
 // ------------------------------------------------------------------------------
 #region Designer generated code
-namespace Specs.TestRunner
+namespace Specs._01TestRunner
 {
     using TechTalk.SpecFlow;
     

@@ -9,7 +9,7 @@
 //  </auto-generated>
 // ------------------------------------------------------------------------------
 #region Designer generated code
-namespace Specs.TagsAndHooks
+namespace Specs._02TagsAndHooks
 {
     using TechTalk.SpecFlow;
     

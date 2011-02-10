@@ -9,7 +9,7 @@
 //  </auto-generated>
 // ------------------------------------------------------------------------------
 #region Designer generated code
-namespace Specs.ContextInjection
+namespace Specs._11ContextInjection
 {
     using TechTalk.SpecFlow;
     

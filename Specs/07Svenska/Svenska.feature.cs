@@ -9,7 +9,7 @@
 //  </auto-generated>
 // ------------------------------------------------------------------------------
 #region Designer generated code
-namespace Specs.CallingStepsFromSteps
+namespace Specs._07Svenska
 {
     using TechTalk.SpecFlow;
     
@@ -17,21 +17,20 @@ namespace Specs.CallingStepsFromSteps
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "1.5.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("Calling Steps from StepDefinitions")]
-    public partial class CallingStepsFromStepDefinitionsFeature
+    [NUnit.Framework.DescriptionAttribute("Summering")]
+    public partial class SummeringFeature
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
         
-#line 1 "CallingStepsFromSteps.feature"
+#line 1 "Svenska.feature"
 #line hidden
         
         [NUnit.Framework.TestFixtureSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Calling Steps from StepDefinitions", "In order to create steps of a higher abstraction\r\nAs a SpecFlow evangelist\r\nI wan" +
-                    "t reuse other steps in my step definitions", GenerationTargetLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("sv-SE"), "Summering", "För att slippa att göra dumma fel\r\nSom räknare\r\nVill jag kunna lägga summera", GenerationTargetLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -54,37 +53,20 @@ namespace Specs.CallingStepsFromSteps
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Log in")]
-        public virtual void LogIn()
+        [NUnit.Framework.DescriptionAttribute("Summera 5 och 7 ska vara 12")]
+        public virtual void Summera5Och7SkaVara12()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Log in", ((string[])(null)));
-#line 6
-this.ScenarioSetup(scenarioInfo);
-#line 7
- testRunner.Given("I am on the index page");
-#line 8
- testRunner.When("I enter my unsername nad password");
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Summera 5 och 7 ska vara 12", ((string[])(null)));
 #line 9
- testRunner.And("I click the login button");
+  this.ScenarioSetup(scenarioInfo);
 #line 10
- testRunner.Then("the welcome page should be displayed");
-#line hidden
-            testRunner.CollectScenarioErrors();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Do something meaningful")]
-        public virtual void DoSomethingMeaningful()
-        {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Do something meaningful", ((string[])(null)));
+    testRunner.Given("att jag har knappat in 5");
+#line 11
+    testRunner.And("att jag har knappat in 7");
 #line 12
-this.ScenarioSetup(scenarioInfo);
+    testRunner.When("jag summerar");
 #line 13
- testRunner.Given("I am logged in");
-#line 14
- testRunner.When("I dosomething meaningful");
-#line 15
- testRunner.Then("I should get rewarded");
+    testRunner.Then("ska resultatet vara 12");
 #line hidden
             testRunner.CollectScenarioErrors();
         }

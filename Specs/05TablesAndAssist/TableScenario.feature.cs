@@ -9,7 +9,7 @@
 //  </auto-generated>
 // ------------------------------------------------------------------------------
 #region Designer generated code
-namespace Specs.TablesAndAssist
+namespace Specs._05TablesAndAssist
 {
     using TechTalk.SpecFlow;
     

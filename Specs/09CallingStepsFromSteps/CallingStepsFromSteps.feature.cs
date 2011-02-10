@@ -9,7 +9,7 @@
 //  </auto-generated>
 // ------------------------------------------------------------------------------
 #region Designer generated code
-namespace Specs.AttributeOverloading
+namespace Specs._09CallingStepsFromSteps
 {
     using TechTalk.SpecFlow;
     
@@ -17,22 +17,21 @@ namespace Specs.AttributeOverloading
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "1.5.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("Attribute overloading")]
-    public partial class AttributeOverloadingFeature
+    [NUnit.Framework.DescriptionAttribute("Calling Steps from StepDefinitions")]
+    public partial class CallingStepsFromStepDefinitionsFeature
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
         
-#line 1 "AttributeOverloading.feature"
+#line 1 "CallingStepsFromSteps.feature"
 #line hidden
         
         [NUnit.Framework.TestFixtureSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Attribute overloading", "In order to show that steps can be used with multiple attributes\nAs a SpecFlow Ev" +
-                    "angelist\nI want to show that similar attributes can be applied to the same step " +
-                    "definition", GenerationTargetLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Calling Steps from StepDefinitions", "In order to create steps of a higher abstraction\r\nAs a SpecFlow evangelist\r\nI wan" +
+                    "t reuse other steps in my step definitions", GenerationTargetLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -55,26 +54,37 @@ namespace Specs.AttributeOverloading
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Checking number for evenness")]
-        public virtual void CheckingNumberForEvenness()
+        [NUnit.Framework.DescriptionAttribute("Log in")]
+        public virtual void LogIn()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Checking number for evenness", ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Log in", ((string[])(null)));
 #line 6
 this.ScenarioSetup(scenarioInfo);
 #line 7
- testRunner.Given("I have this simple step");
+ testRunner.Given("I am on the index page");
 #line 8
-  testRunner.And("this simple step");
+ testRunner.When("I enter my unsername nad password");
 #line 9
-  testRunner.And("also this step");
+ testRunner.And("I click the login button");
 #line 10
- testRunner.When("I do something");
-#line 11
- testRunner.Then("I could validate that the number 2 is even");
+ testRunner.Then("the welcome page should be displayed");
+#line hidden
+            testRunner.CollectScenarioErrors();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Do something meaningful")]
+        public virtual void DoSomethingMeaningful()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Do something meaningful", ((string[])(null)));
 #line 12
-  testRunner.And("that the number 4 is even");
+this.ScenarioSetup(scenarioInfo);
 #line 13
-  testRunner.But("the number 3 is odd");
+ testRunner.Given("I am logged in");
+#line 14
+ testRunner.When("I dosomething meaningful");
+#line 15
+ testRunner.Then("I should get rewarded");
 #line hidden
             testRunner.CollectScenarioErrors();
         }

@@ -9,7 +9,7 @@
 //  </auto-generated>
 // ------------------------------------------------------------------------------
 #region Designer generated code
-namespace Specs.CompareToAssist
+namespace Specs._06CompareToAssist
 {
     using TechTalk.SpecFlow;
     
