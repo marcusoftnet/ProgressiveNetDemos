@@ -71,6 +71,12 @@
       <DependentUpon>BackgroundFeature.feature</DependentUpon>
     </Compile>
     <Compile Include="Background\BackgroundSteps.cs" />
+    <Compile Include="CallingStepsFromSteps\CallingStepsFromSteps.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CallingStepsFromSteps.feature</DependentUpon>
+    </Compile>
+    <Compile Include="CallingStepsFromSteps\CallingStepsFromStepDefinitionSteps.cs" />
     <Compile Include="CompareToAssist\CompareTo.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -149,6 +155,10 @@
     <None Include="Background\BackgroundFeature.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>BackgroundFeature.feature.cs</LastGenOutput>
+    </None>
+    <None Include="CallingStepsFromSteps\CallingStepsFromSteps.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>CallingStepsFromSteps.feature.cs</LastGenOutput>
     </None>
     <None Include="CompareToAssist\CompareTo.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
