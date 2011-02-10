@@ -52,7 +52,7 @@ namespace Specs.CompareToAssist
 
             try
             {
-                tableToNotMatch.CompareToInstance(persons);
+                tableToNotMatch.CompareToSet(persons);
             }
             catch (ComparisonException ex)
             {

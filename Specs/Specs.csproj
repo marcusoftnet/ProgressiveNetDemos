@@ -72,6 +72,12 @@
     </Compile>
     <Compile Include="CompareToAssist\CompareToSteps.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Svenska\Svenska.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Svenska.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Svenska\SvenskaSteg.cs" />
     <Compile Include="TablesAndAssist\TableScenario.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -110,6 +116,10 @@
       <LastGenOutput>CompareTo.feature.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
+    <None Include="Svenska\Svenska.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Svenska.feature.cs</LastGenOutput>
+    </None>
     <None Include="TablesAndAssist\TableScenario.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>TableScenario.feature.cs</LastGenOutput>
@@ -126,6 +136,10 @@
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>TestRunnerIsNotImportant.feature.cs</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AttributeOverloading\" />
+    <Folder Include="ScenarioOutline\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

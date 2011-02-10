@@ -175,8 +175,12 @@ this.ScenarioSetup(scenarioInfo);
                         "Marcus",
                         "Cool",
                         "10/9/1972 12:00:00 AM"});
+            table7.AddRow(new string[] {
+                        "Anders",
+                        "Butch",
+                        "1/1/1977 12:00:00 AM"});
 #line 42
- testRunner.And("CompareToSet should not match this", ((string)(null)), table7);
+ testRunner.But("CompareToSet should not match this", ((string)(null)), table7);
 #line hidden
             testRunner.CollectScenarioErrors();
         }

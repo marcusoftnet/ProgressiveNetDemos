@@ -39,6 +39,7 @@ Scenario: CompareToSet
 		| Marcus    | Cool		| 10/9/1972 12:00:00 AM | 
 		| Anders    | Butch		| 1/1/1977 12:00:00 AM	| 
 		| Jocke     | Soft		| 4/4/1974 12:00:00 AM	| 
-	And CompareToSet should not match this
+	But CompareToSet should not match this
 		| Name		| Style		| BirthDate				|  
-		| Marcus    | Cool		| 10/9/1972 12:00:00 AM | 
+		| Marcus    | Cool		| 10/9/1972 12:00:00 AM |		
+		| Anders    | Butch		| 1/1/1977 12:00:00 AM	|
