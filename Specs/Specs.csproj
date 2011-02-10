@@ -96,6 +96,17 @@
       <DependentUpon>ScenarioOutline.feature</DependentUpon>
     </Compile>
     <Compile Include="ScenarioOutline\ScenarioOutlineTests.cs" />
+    <Compile Include="StepTransformation\Entities\Terminal.cs" />
+    <Compile Include="StepTransformation\Entities\User.cs" />
+    <Compile Include="StepTransformation\StepTransformationSteps.cs" />
+    <Compile Include="StepTransformation\StepTransformation.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StepTransformation.feature</DependentUpon>
+    </Compile>
+    <Compile Include="StepTransformation\Transformations\DateConverter.cs" />
+    <Compile Include="StepTransformation\Transformations\TerminalConverter.cs" />
+    <Compile Include="StepTransformation\Transformations\UserConverter.cs" />
     <Compile Include="Svenska\Svenska.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -151,6 +162,10 @@
     <None Include="ScenarioOutline\ScenarioOutline.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>ScenarioOutline.feature.cs</LastGenOutput>
+    </None>
+    <None Include="StepTransformation\StepTransformation.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>StepTransformation.feature.cs</LastGenOutput>
     </None>
     <None Include="Svenska\Svenska.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
