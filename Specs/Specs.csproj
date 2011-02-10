@@ -59,6 +59,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AttributeOverloading\AttributeOverloading.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AttributeOverloading.feature</DependentUpon>
+    </Compile>
+    <Compile Include="AttributeOverloading\AttributeOverloadingSteps.cs" />
     <Compile Include="Background\BackgroundFeature.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -84,6 +90,12 @@
     <Compile Include="ContextInjection\NestedContext.cs" />
     <Compile Include="ContextInjection\SingleContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScenarioOutline\ScenarioOutline.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ScenarioOutline.feature</DependentUpon>
+    </Compile>
+    <Compile Include="ScenarioOutline\ScenarioOutlineTests.cs" />
     <Compile Include="Svenska\Svenska.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -119,6 +131,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="AttributeOverloading\AttributeOverloading.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>AttributeOverloading.feature.cs</LastGenOutput>
+    </None>
     <None Include="Background\BackgroundFeature.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>BackgroundFeature.feature.cs</LastGenOutput>
@@ -132,6 +148,10 @@
       <LastGenOutput>ContextInjection.feature.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
+    <None Include="ScenarioOutline\ScenarioOutline.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ScenarioOutline.feature.cs</LastGenOutput>
+    </None>
     <None Include="Svenska\Svenska.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>Svenska.feature.cs</LastGenOutput>
@@ -153,10 +173,7 @@
       <LastGenOutput>TestRunnerIsNotImportant.feature.cs</LastGenOutput>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="AttributeOverloading\" />
-    <Folder Include="ScenarioOutline\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
