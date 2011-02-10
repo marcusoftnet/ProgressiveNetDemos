@@ -18,5 +18,10 @@ namespace Specs.TestEntities
                 (Style == pIn.Style) &&
                 (BirthDate == pIn.BirthDate);
         }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
     }
 }

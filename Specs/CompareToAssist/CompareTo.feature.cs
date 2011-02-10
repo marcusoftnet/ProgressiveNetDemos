@@ -120,6 +120,66 @@ this.ScenarioSetup(scenarioInfo);
 #line hidden
             testRunner.CollectScenarioErrors();
         }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("CompareToSet")]
+        public virtual void CompareToSet()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("CompareToSet", ((string[])(null)));
+#line 31
+this.ScenarioSetup(scenarioInfo);
+#line hidden
+            TechTalk.SpecFlow.Table table5 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Name",
+                        "Style",
+                        "Birth date"});
+            table5.AddRow(new string[] {
+                        "Marcus",
+                        "Cool",
+                        "1972-10-09"});
+            table5.AddRow(new string[] {
+                        "Anders",
+                        "Butch",
+                        "1977-01-01"});
+            table5.AddRow(new string[] {
+                        "Jocke",
+                        "Soft",
+                        "1974-04-04"});
+#line 32
+ testRunner.Given("I have the following persons using assist", ((string)(null)), table5);
+#line hidden
+            TechTalk.SpecFlow.Table table6 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Name",
+                        "Style",
+                        "BirthDate"});
+            table6.AddRow(new string[] {
+                        "Marcus",
+                        "Cool",
+                        "10/9/1972 12:00:00 AM"});
+            table6.AddRow(new string[] {
+                        "Anders",
+                        "Butch",
+                        "1/1/1977 12:00:00 AM"});
+            table6.AddRow(new string[] {
+                        "Jocke",
+                        "Soft",
+                        "4/4/1974 12:00:00 AM"});
+#line 37
+ testRunner.Then("CompareToSet should match this", ((string)(null)), table6);
+#line hidden
+            TechTalk.SpecFlow.Table table7 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Name",
+                        "Style",
+                        "BirthDate"});
+            table7.AddRow(new string[] {
+                        "Marcus",
+                        "Cool",
+                        "10/9/1972 12:00:00 AM"});
+#line 42
+ testRunner.And("CompareToSet should not match this", ((string)(null)), table7);
+#line hidden
+            testRunner.CollectScenarioErrors();
+        }
     }
 }
 #endregion

@@ -1,4 +1,5 @@
-﻿using Should.Fluent;
+﻿using System.Collections.Generic;
+using Should.Fluent;
 using Specs.TestEntities;
 using TechTalk.SpecFlow;
 using TechTalk.SpecFlow.Assist;
@@ -29,6 +30,29 @@ namespace Specs.CompareToAssist
             try
             {
                 instanceTableToNotMatch.CompareToInstance(p);
+            }
+            catch (ComparisonException ex)
+            {
+                ex.Message.Should().Not.Be.Empty();
+            }
+        }
+
+
+        [Then(@"CompareToSet should match this")]
+        public void CompareToSetShouldMatch(Table tableToMatch)
+        {
+            var persons = ScenarioContext.Current.Get<List<Person>>();
+            tableToMatch.CompareToSet(persons);
+        }
+
+        [Then(@"CompareToSet should not match this")]
+        public void CompareToSetShouldNotMatch(Table tableToNotMatch)
+        {
+            var persons = ScenarioContext.Current.Get<List<Person>>();
+
+            try
+            {
+                tableToNotMatch.CompareToInstance(persons);
             }
             catch (ComparisonException ex)
             {
