@@ -71,6 +71,18 @@
       <DependentUpon>CompareTo.feature</DependentUpon>
     </Compile>
     <Compile Include="CompareToAssist\CompareToSteps.cs" />
+    <Compile Include="ContextInjection\ContextInjection.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ContextInjection.feature</DependentUpon>
+    </Compile>
+    <Compile Include="ContextInjection\FeatureWithADependentContextSteps.cs" />
+    <Compile Include="ContextInjection\FeatureWithARecursiveContextSteps.cs" />
+    <Compile Include="ContextInjection\FeatureWithASingleContextSteps.cs" />
+    <Compile Include="ContextInjection\FeatureWithMultipleContextsSteps.cs" />
+    <Compile Include="ContextInjection\FeatureWithNoContextSteps.cs" />
+    <Compile Include="ContextInjection\NestedContext.cs" />
+    <Compile Include="ContextInjection\SingleContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Svenska\Svenska.feature.cs">
       <AutoGen>True</AutoGen>
@@ -114,6 +126,10 @@
     <None Include="CompareToAssist\CompareTo.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>CompareTo.feature.cs</LastGenOutput>
+    </None>
+    <None Include="ContextInjection\ContextInjection.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ContextInjection.feature.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
     <None Include="Svenska\Svenska.feature">
