@@ -1,0 +1,60 @@
+@model ActivityLog.Models.Activity
+
+@* This partial view defines form fields that will appear when creating and editing entities *@
+
+<div class="fieldset-top" />
+<div class="editor-label">
+    @Html.LabelFor(model => model.When)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.When)
+    @Html.ValidationMessageFor(model => model.When)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.NumberOfHours)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.NumberOfHours)
+    @Html.ValidationMessageFor(model => model.NumberOfHours)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.Heading)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.Heading)
+    @Html.ValidationMessageFor(model => model.Heading)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.Description)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.Description)
+    @Html.ValidationMessageFor(model => model.Description)
+</div>
+
+<div class="editor-label">
+    Person
+</div>
+<div class="editor-field">
+    @Html.DropDownListFor(model => model.PersonId, ((IEnumerable<ActivityLog.Models.Person>)ViewBag.PossiblePeople).Select(option => new SelectListItem {
+        Text = (option == null ? "None" : option.Name), 
+        Value = option.PersonId.ToString(),
+        Selected = (Model != null) && (option.PersonId == Model.PersonId)
+    }), "Choose...")
+    @Html.ValidationMessageFor(model => model.PersonId)
+</div>
+<div class="editor-label">
+    Customer
+</div>
+<div class="editor-field">
+    @Html.DropDownListFor(model => model.CustomerId, ((IEnumerable<ActivityLog.Models.Customer>)ViewBag.PossibleCustomers).Select(option => new SelectListItem {
+        Text = (option == null ? "None" : option.Name), 
+        Value = option.CustomerId.ToString(),
+        Selected = (Model != null) && (option.CustomerId == Model.CustomerId)
+    }), "Choose...")
+    @Html.ValidationMessageFor(model => model.CustomerId)
+</div>
+<div class="fieldset-bottom" />

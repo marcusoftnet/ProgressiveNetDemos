@@ -1,0 +1,31 @@
+@model ActivityLog.Models.Person
+
+@* This partial view defines form fields that will appear when creating and editing entities *@
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.Name)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.Name)
+    @Html.ValidationMessageFor(model => model.Name)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.Company)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.Company)
+    @Html.ValidationMessageFor(model => model.Company)
+</div>
+
+<div class="editor-label">
+    Manager
+</div>
+<div class="editor-field">
+    @Html.DropDownListFor(model => model.ManagerId, ((IEnumerable<ActivityLog.Models.Person>)ViewBag.PossibleManagers).Select(option => new SelectListItem {
+        Text = (option == null ? "None" : option.Name), 
+        Value = option.PersonId.ToString(),
+        Selected = (Model != null) && (option.PersonId == Model.ManagerId)
+    }), "Choose...")
+    @Html.ValidationMessageFor(model => model.ManagerId)
+</div>

@@ -1,0 +1,405 @@
+
+/*  Print Styles - 3 of 12 Microsoft Internet Explorer Design Templates 
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	 
+	 HTML TAGS
+	 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+body {
+	font-family:"Courier New", Courier, monospace;
+	color:#493929;
+	margin:0;
+	padding:0;
+	}
+
+p, li {
+	font-size:.8em;
+	line-height:120%;
+	}
+	
+a img {
+	border:none;
+	}
+
+/* HEADINGS */
+	
+h1,h2,h3,h4,h5,h6 {
+	margin:15px 0;
+	padding:17px 0 14px 10px;
+	}
+	
+h1.first,
+h2.first,
+h3.first,
+h4.first,
+h5.first,
+h6.first {
+	margin-top:0;
+	}
+	
+h1 {
+	font-size:1.4em;
+	}
+	
+h2 {
+	font-size:1.1em;
+	padding:7px 0 3px 10px;
+	}
+	
+h3 {
+	font-size:1em;
+	padding:4px 0 1px 10px;
+	}
+	
+h4 {
+	font-size:.9em;
+	padding:0 0 0 10px;
+	}
+	
+h5 {
+	font-size:.8em;
+	padding:0 0 0 10px;
+	}
+	
+h6 {
+	font-size:.75em;
+	padding:0 0 0 10px;
+	}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	 
+	 FORMS
+	 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+fieldset {
+	padding:0 20px;
+	margin:0;
+	border:2px solid #97302F;
+	}
+
+.fieldset-top {
+	height:55px;
+	margin-top:20px;
+	}
+	
+.fieldset-bottom {
+	height:74px;
+	margin-bottom:20px;
+	}
+	
+fieldset fieldset,
+fieldset fieldset fieldset {
+	margin:5px 0;
+	width:90%;
+	border:1px solid #FFF;
+	background:none;
+	padding:0 10px;
+	}
+	
+legend {
+	font-weight:bold;
+	font-size:1.2em;
+	color:#FFF;
+	padding:0 30px 30px 30px;
+	background:#97302F;
+	display:block;
+	}
+
+fieldset fieldset legend {
+	font-size:1em;
+	border:none;
+	padding:0 5px;
+	}
+	
+input,
+textarea,
+select {
+	display:block;
+	margin-bottom:15px;
+	vertical-align:top;
+	padding:3px;
+	color:#666666;
+	font-size:.9em;
+	}
+
+label {
+	font-weight:bold;
+	font-size:.8em;
+	font-weight:bold;
+	display:block;
+	color:#e1c2c2;
+	}
+
+.checkbox {	
+	margin:8px 0;
+	border:1px solid #CCC;
+	}
+	
+.checkbox input {	
+	margin-right:8px;
+	margin-bottom:6px;
+	}
+
+input.button-big {
+	font-weight:bold;
+	padding:6px 15px;
+	display:inline;
+	cursor:pointer;
+	margin-bottom:0;
+	}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	 
+	 LINKS
+	 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+a:link {
+	color:#a40000;
+	text-decoration:underline;
+	font-weight:bold;
+	}
+
+a:visited {
+	color:#aa5000;
+	text-decoration:underline;
+	font-weight:bold;
+	}
+
+a:hover {
+	text-decoration:none;
+	}
+
+a:active {
+	text-decoration:none;
+	}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	 
+	 LOGIN
+	 	 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.nav-login {
+	display:none;
+	}
+	
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	 
+	 LOGO
+	 	 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.logo {
+	font-size:2em;
+	font-weight:bold;
+	color:#a40000;
+	padding-bottom:10px;
+	letter-spacing:-.05em;
+	border-bottom:1px dashed #111;
+	margin-bottom:10px;
+	}
+	
+.logo a:link,
+.logo a:visited {
+	text-decoration:none;
+	color:#a40000;
+	}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	 
+	 MAIN NAV
+	 	 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.nav-main {
+	display:none;
+	}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	 
+	 BREADCRUMB
+	 	 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.breadcrumb {
+	margin:0 0 10px 0;
+	font-size:.8em;
+	}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	 
+	 FOOTER
+	 	 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.footer-container {
+	margin:40px auto 0 auto;
+	padding-top:15px;
+	border-top:1px dashed #111;
+	}
+	
+.footer-container a:link,
+.footer-container a:visited {
+	color:#a40000;
+	font-weight:bold;
+	}
+
+.footer-container a:active {
+	text-decoration:none;
+	}
+	
+.nav-footer {
+	display:none;
+	}
+	
+.copyright {
+	color:#000;
+	font-size:.95em;
+	}
+		
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	 
+	 PHOTOS & CAPTIONS
+	 	 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/* PHOTO BORDERS */
+
+.photo-container {
+	position:relative;
+	clear:both;
+	border:1px dashed #CCC;
+	padding:20px 0 10px 20px;
+	}
+
+.photo-container img{
+	display:block;
+	}
+
+.photo-top,
+.photo-top span,
+.photo-bottom,
+.photo-bottom span,
+.photo-side,
+.photo-side span {
+	display:none;
+	}
+
+/* CONTENT */
+	
+.photo-caption {
+	font-size:.8em;
+	padding:5px 0 2px 0;
+	}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	 
+	 TWO-COLUMN SECTION
+	 	 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.two-column-container {
+	width:100%;
+	position:relative;
+	}
+	
+.two-column-1 {
+	float:left;
+	width:47%;
+	}
+	
+.two-column-2 {
+	float:right;
+	width:47%;
+	}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	 
+	 DATA TABLES
+	 	 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+table.data-table {
+	font-size:.9em;
+	padding-bottom:50px;
+	width:623px;
+	color:#FFF;
+	margin:0 0 10px 0;
+	border-top:1px solid #506a94;
+	border-left:1px solid #506a94;
+	}
+
+table.data-table caption{
+	padding:30px 10px 15px 10px;
+	text-align:left;
+	font-weight:bold;
+	margin:10px 0 0 0;
+	border:1px solid #506a94;
+	border-bottom:none;
+	}
+
+table.data-table td,
+table.data-table th{
+	padding:10px;
+	}
+
+table.data-table td{
+	border-right:1px solid #506a94;
+	}
+		
+table.data-table th{
+	text-align:left;
+	border-right:1px solid #506a94;
+	border-bottom:1px solid #506a94;
+	}
+	
+table.data-table td{
+	}
+
+table.data-table tr.row-alternating td{
+	border-top:1px solid #506a94;
+	border-bottom:1px solid #506a94;
+	}
+	
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	 
+	 MISC STYLES
+	 	 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.none {
+	display:none;
+	}
+
+.clear {
+	clear:both;
+	font-size:1px;
+	margin:0;
+	padding:0;
+	}
+
+.align-left {
+	float:left;
+	margin:0 20px 15px 0;
+	}
+
+.align-right {
+	float:right;
+	margin:0 0 15px 20px;
+	}
+
+.align-middle {
+	vertical-align:middle;
+	}
+	
+.inline {
+	display:inline;
+	}
+
+.no-margin {
+	margin:0;
+	}

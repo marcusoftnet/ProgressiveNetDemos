@@ -1,0 +1,68 @@
+﻿<#@ template language="C#" HostSpecific="True"  inherits="DynamicTransform" #>
+<#@ import namespace="EnvDTE" #>
+<#@ Output Extension="cs" #>
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.Entity;
+using System.Linq;
+using System.Linq.Expressions;
+using System.Web;
+<# if((!string.IsNullOrEmpty(Model.ModelTypeNamespace)) && (Model.ModelTypeNamespace != Model.RepositoryNamespace)) { #>
+using <#= Model.ModelTypeNamespace #>;
+<# } #>
+
+namespace <#= Model.RepositoryNamespace #>
+{ 
+<# var modelType = (CodeType)Model.ModelType; var modelName = modelType.Name; var modelNamePlural = Model.ModelTypePluralized; var contextName = Model.DbContextType; #>
+    public class <#= modelName #>Repository : I<#= modelName #>Repository
+    {
+        <#= contextName #> context = new <#= contextName #>();
+
+        public IEnumerable<<#= modelName #>> GetAll<#= modelNamePlural #>(params Expression<Func<<#= modelName #>, object>>[] includeProperties)
+        {
+            IQueryable<<#= modelName #>> query = context.<#= modelNamePlural #>;
+            foreach (var includeProperty in includeProperties) {
+                query = query.Include(includeProperty);
+            }
+            return query.ToList();
+        }
+
+        public <#= modelName #> GetById(int id)
+        {
+            return context.<#= modelNamePlural #>.Find(id);
+        }
+
+        public void InsertOrUpdate(<#= modelName #> <#= modelName.ToLower() #>)
+        {
+            if (<#= modelName.ToLower() #>.<#= Model.PrimaryKey #> == 0) {
+                // New entity
+                context.<#= modelNamePlural #>.Add(<#= modelName.ToLower() #>);
+            } else {
+                // Existing entity
+                context.<#= modelNamePlural #>.Attach(<#= modelName.ToLower() #>);
+                context.Entry(<#= modelName.ToLower() #>).State = EntityState.Modified;
+            }
+        }
+
+        public void Delete(int id)
+        {
+            var <#= modelName.ToLower() #> = context.<#= modelNamePlural #>.Find(id);
+            context.<#= modelNamePlural #>.Remove(<#= modelName.ToLower() #>);
+        }
+
+        public void Save()
+        {
+            context.SaveChanges();
+        }
+    }
+
+	public interface I<#= modelName #>Repository
+    {
+		IEnumerable<<#= modelName #>> GetAll<#= modelNamePlural #>(params Expression<Func<<#= modelName #>, object>>[] includeProperties);
+		<#= modelName #> GetById(int id);
+		void InsertOrUpdate(<#= modelName #> <#= modelName.ToLower() #>);
+        void Delete(int id);
+        void Save();
+    }
+}

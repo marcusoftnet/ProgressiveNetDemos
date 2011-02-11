@@ -1,0 +1,47 @@
+@model IEnumerable<ActivityLog.Models.Customer>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th scope="col"></th>
+        <th scope="col">
+            Name
+        </th>
+        <th scope="col">
+            Contact
+        </th>
+        <th scope="col">
+            Extra
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.CustomerId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.CustomerId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.CustomerId })
+        </td>
+        <td>
+			@item.Name
+        </td>
+        <td>
+			@item.Contact
+        </td>
+        <td>
+			@item.Extra
+        </td>
+    </tr>
+}
+
+</table>
+
+

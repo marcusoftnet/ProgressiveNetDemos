@@ -1,0 +1,53 @@
+@model IEnumerable<ActivityLog.Models.Person>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th scope="col"></th>
+        <th scope="col">
+            Name
+        </th>
+        <th scope="col">
+            Company
+        </th>
+        <th scope="col">
+            Manages
+        </th>
+        <th scope="col">
+            Manager
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.PersonId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.PersonId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.PersonId })
+        </td>
+        <td>
+			@item.Name
+        </td>
+        <td>
+			@item.Company
+        </td>
+        <td>
+			@Html.DisplayTextFor(_ => item.Manages).ToString()
+        </td>
+        <td>
+			@(item.Manager == null ? "None" : item.Manager.Name)
+        </td>
+    </tr>
+}
+
+</table>
+
+
