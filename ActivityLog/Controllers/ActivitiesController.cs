@@ -32,11 +32,23 @@ namespace ActivityLog.Controllers
             if (authentication.Identity.IsAuthenticated)
             {
                 activities = from a in activities
-                             where a.Who.Name == authentication.Identity.Name
+                             where a.Who.Name == OnlyUserName()
                              select a;
             }
-            
+
             return View("Index",activities);
+        }
+
+        private string OnlyUserName()
+        {
+            var name = authentication.Identity.Name;
+            if (name.Contains(@"\"))
+            {
+                var i = name.IndexOf(@"\");
+                name = name.Substring(i + 1);
+            }
+
+            return name;
         }
 
         //

@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 using ActivityLog.Models;
 using ActivityLog.Models.Storage;
@@ -11,12 +7,7 @@ namespace ActivityLog.Controllers
     public class PeopleController : Controller
     {
 		private readonly IPersonRepository personRepository;
-
-		// If you are using Dependency Injection, you can delete the following constructor
-        public PeopleController() : this(new PersonRepository())
-        {
-        }
-
+        
         public PeopleController(IPersonRepository personRepository)
         {
 			this.personRepository = personRepository;
