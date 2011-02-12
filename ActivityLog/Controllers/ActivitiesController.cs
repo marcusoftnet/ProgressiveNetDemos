@@ -12,20 +12,9 @@ namespace ActivityLog.Controllers
 		private readonly ICustomerRepository customerRepository;
 		private readonly IActivityRepository activityRepository;
         private readonly IPrincipal authentication;
-
-        // If you are using Dependency Injection, you can delete the following constructor
-        public ActivitiesController() : this(new PersonRepository(), 
-            new CustomerRepository(), 
-            new ActivityRepository(), null)
-        {
-            this.authentication = User;
-        }
-
-
-        public ActivitiesController(IPersonRepository personRepository, 
-            ICustomerRepository customerRepository, 
-            IActivityRepository activityRepository,
-            IPrincipal authentication)
+        
+        public ActivitiesController(IPersonRepository personRepository, ICustomerRepository customerRepository, 
+            IActivityRepository activityRepository, IPrincipal authentication)
         {
 			this.personRepository = personRepository;
 			this.customerRepository = customerRepository;

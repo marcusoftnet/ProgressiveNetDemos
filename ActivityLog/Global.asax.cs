@@ -36,5 +36,7 @@ namespace ActivityLog
 
             DbDatabase.SetInitializer(new DropCreateDatabaseIfModelChanges<ActivityLogContext>());
         }
+
+        
     }
 }
