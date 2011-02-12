@@ -157,7 +157,6 @@
     <Content Include="Views\Activities\Details.cshtml" />
     <Content Include="Views\Activities\Index.cshtml" />
     <Content Include="Views\Activities\_CreateOrEdit.cshtml" />
-    <Content Include="Views\Shared\Site.Master" />
     <Content Include="Views\Shared\Copy of _Layout.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using ActivityLog.Models;
-using ActivityLog.Models.Storage;
 using NSubstitute;
 using TechTalk.SpecFlow;
 using TechTalk.SpecFlow.Assist;
@@ -11,6 +10,8 @@ namespace SpecsAgainstController.Steps
     [Binding]
     public class ActivityRepositorySteps
     {
+        public static List<Activity> InitialActivities { get; set; }
+
         [Given(@"the following activities in the database")]
         public void SetupActivities(Table activitiesTable)
         {
@@ -26,7 +27,9 @@ namespace SpecsAgainstController.Steps
             }
             #endregion
 
-            Substitutes.ActivtyRepository.GetAllActivities().Returns(activities);
+            InitialActivities = activities;
+
+            Substitutes.ActivtyRepository.GetAllActivities().Returns(InitialActivities);
 
         }
 

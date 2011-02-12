@@ -1,3 +1,4 @@
+using System.Linq;
 using System.Security.Principal;
 using System.Web.Mvc;
 using ActivityLog.Models;
@@ -37,20 +38,16 @@ namespace ActivityLog.Controllers
 
         public ViewResult Index()
         {
-            //var activities = authentication.Identity.IsAuthenticated ? 
-            //                activityRepository.GetAllActivities(x => x.Who.Name == authentication.Identity.Name) : 
-            //                activityRepository.GetAllActivities();
-
             var activities = activityRepository.GetAllActivities();
 
-            //if(authentication.Identity.IsAuthenticated)
-            //{
-            //    activities = from a in activities
-            //                 where a.Who.Name == authentication.Identity.Name
-            //                 select a;
-            //}
+            if (authentication.Identity.IsAuthenticated)
+            {
+                activities = from a in activities
+                             where a.Who.Name == authentication.Identity.Name
+                             select a;
+            }
             
-            return View(activities);
+            return View("Index",activities);
         }
 
         //

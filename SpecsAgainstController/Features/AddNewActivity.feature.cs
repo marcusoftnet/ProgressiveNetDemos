@@ -45,12 +45,56 @@ namespace SpecsAgainstController.Features
         public virtual void ScenarioSetup(TechTalk.SpecFlow.ScenarioInfo scenarioInfo)
         {
             testRunner.OnScenarioStart(scenarioInfo);
+            this.FeatureBackground();
         }
         
         [NUnit.Framework.TearDownAttribute()]
         public virtual void ScenarioTearDown()
         {
             testRunner.OnScenarioEnd();
+        }
+        
+        public virtual void FeatureBackground()
+        {
+#line 6
+#line hidden
+            TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Activity id",
+                        "When",
+                        "Number of hours",
+                        "Who",
+                        "At Customer",
+                        "Heading",
+                        "Description"});
+            table1.AddRow(new string[] {
+                        "1",
+                        "2010-02-17",
+                        "2",
+                        "Marcus",
+                        "Alt.Net",
+                        "Fluent NH",
+                        "Blixttal om Fluent NHibernate"});
+            table1.AddRow(new string[] {
+                        "2",
+                        "2011-01-17",
+                        "4",
+                        "Marcus",
+                        "LF",
+                        "Kanban",
+                        "En dragning om Kanban"});
+            table1.AddRow(new string[] {
+                        "3",
+                        "2011-02-17",
+                        "2",
+                        "Anders",
+                        "Avega",
+                        "BDD",
+                        "Beskrev vad BDD är för säljarna"});
+#line 7
+ testRunner.Given("the following activities in the database", ((string)(null)), table1);
+#line 12
+  testRunner.And("I am logged in as Marcus");
+#line hidden
         }
         
         [NUnit.Framework.TestAttribute()]
@@ -60,16 +104,61 @@ namespace SpecsAgainstController.Features
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add new item without any validation errors", new string[] {
                         "wip"});
-#line 8
+#line 15
 this.ScenarioSetup(scenarioInfo);
-#line 9
- testRunner.Given("I have entered 50 into the calculator");
-#line 10
- testRunner.And("I have entered 70 into the calculator");
-#line 11
- testRunner.When("I press add");
-#line 12
- testRunner.Then("the result should be 120 on the screen");
+#line 16
+ testRunner.When("I navigate to to the Add Activity page");
+#line hidden
+            TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Field",
+                        "Value"});
+            table2.AddRow(new string[] {
+                        "When",
+                        "2011-02-17"});
+            table2.AddRow(new string[] {
+                        "Number of hours",
+                        "3"});
+            table2.AddRow(new string[] {
+                        "Who",
+                        "Marcus"});
+            table2.AddRow(new string[] {
+                        "At Customer",
+                        "Progressive .NET"});
+            table2.AddRow(new string[] {
+                        "Heading",
+                        "SpecFlow"});
+            table2.AddRow(new string[] {
+                        "Description",
+                        "En dragning kring SpecFlow"});
+#line 17
+  testRunner.And("I submit an activitiy with this information", ((string)(null)), table2);
+#line 25
+ testRunner.Then("I should be redirected the Activity list");
+#line 26
+ testRunner.When("I am redirected to the Activity list");
+#line hidden
+            TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
+                        "When",
+                        "NumberOfHours",
+                        "Heading",
+                        "Description"});
+            table3.AddRow(new string[] {
+                        "2010-02-17",
+                        "2",
+                        "Fluent NH",
+                        "Blixttal om Fluent NHibernate"});
+            table3.AddRow(new string[] {
+                        "2011-01-17",
+                        "4",
+                        "Kanban",
+                        "En dragning om Kanban"});
+            table3.AddRow(new string[] {
+                        "2011-02-17",
+                        "3",
+                        "SpecFlow",
+                        "En dragning kring SpecFlow"});
+#line 27
+ testRunner.Then("I should see the following activites", ((string)(null)), table3);
 #line hidden
             testRunner.CollectScenarioErrors();
         }
