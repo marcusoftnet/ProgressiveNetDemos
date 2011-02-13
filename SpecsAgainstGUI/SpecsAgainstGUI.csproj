@@ -36,7 +36,7 @@
     </Reference>
     <Reference Include="Interop.SHDocVw">
       <HintPath>..\lib\Interop.SHDocVw.dll</HintPath>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="nunit.framework, Version=2.5.9.10348, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -68,18 +68,28 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Features\NavigatingTheActivityList.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NavigatingTheActivityList.feature</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Steps\ActivityListPageSteps.cs" />
+    <Compile Include="Steps\CreateActivityPageSteps.cs" />
     <Compile Include="Steps\Infrastructure\WebBrowser.cs" />
     <Compile Include="Steps\PageObjects\ActivitiesPage.cs" />
+    <Compile Include="Steps\PageObjects\CreateActivityPage.cs" />
     <Compile Include="Steps\PageObjects\PageObjectBase.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Features\NavigatingTheActivityList.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>NavigatingTheActivityList.feature.cs</LastGenOutput>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Features\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

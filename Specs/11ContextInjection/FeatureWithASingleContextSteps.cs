@@ -1,5 +1,4 @@
-﻿using NUnit.Framework;
-using Should.Fluent;
+﻿using Should.Fluent;
 using TechTalk.SpecFlow;
 
 namespace Specs.ContextInjection

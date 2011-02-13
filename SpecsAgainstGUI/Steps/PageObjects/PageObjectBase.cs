@@ -21,5 +21,15 @@ namespace SpecsAgainstGUI.Steps.PageObjects
             var absoluteUrl = new Uri(rootUrl, relativeUrl);
             Browser.GoTo(absoluteUrl);
         }
+
+        protected void ClickLink(string linkText)
+        {
+            Browser.Link(x => x.Text == linkText).Click();
+        }
+
+        public string Title
+        {
+            get { return Browser.Title; }
+        }
     }
 }

@@ -19,5 +19,6 @@ namespace ActivityLog.Models
         [Required]
         public string Heading { get; set; }
         public string Description { get; set; }
+        public bool On { get; set; }
     }
 }

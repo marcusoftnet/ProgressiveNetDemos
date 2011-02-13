@@ -30,8 +30,8 @@ namespace SpecsAgainstController.Features
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Add new activity", "In order to keep track of the activities I do at work\nAs a consultant\nI want to b" +
-                    "e able to add a activity I have done", GenerationTargetLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Add new activity", "In order to keep track of the activities I do at work\r\nAs a consultant\r\nI want to" +
+                    " be able to add a activity I have done", GenerationTargetLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         

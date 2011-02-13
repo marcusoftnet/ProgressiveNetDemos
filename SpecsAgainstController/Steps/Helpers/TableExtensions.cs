@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using TechTalk.SpecFlow;
 
-namespace SpecsAgainstController.Helpers
+namespace SpecsAgainstController.Steps.Helpers
 {
     public static class TableExtensions
     {
