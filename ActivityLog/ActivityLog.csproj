@@ -77,6 +77,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\MenuItemHelper.cs" />
     <Compile Include="Models\Activity.cs" />
     <Compile Include="Models\Person.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -90,25 +91,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\Images\bg-fieldset-bottom.jpg" />
-    <Content Include="Content\Images\bg-fieldset-top.jpg" />
-    <Content Include="Content\Images\bg-heading-bottom.png" />
-    <Content Include="Content\Images\bg-heading.jpg" />
-    <Content Include="Content\Images\bg-line.png" />
-    <Content Include="Content\Images\bg-logo.png" />
-    <Content Include="Content\Images\bg-main-paper.jpg" />
-    <Content Include="Content\Images\bg-main.jpg" />
-    <Content Include="Content\Images\bg-photo.png" />
-    <Content Include="Content\Images\bg-poster.jpg" />
-    <Content Include="Content\Images\bg-side.png" />
-    <Content Include="Content\Images\bg-table-bottom.jpg" />
-    <Content Include="Content\Images\bg-table-top.jpg" />
-    <Content Include="Content\Images\bullet-nav-side.png" />
-    <Content Include="Content\Images\bullet.png" />
-    <Content Include="Content\Images\favicon.ico" />
-    <Content Include="Content\Images\photo-small-01.jpg" />
-    <Content Include="Content\Images\photo-small-02.jpg" />
-    <Content Include="Content\print-styles.css" />
+    <Content Include="Content\bg-main-corner-sprite.png" />
+    <Content Include="Content\bg-main.png" />
+    <Content Include="Content\bg-nav-corner-sprite.png" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -143,6 +128,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\Images\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -167,7 +153,6 @@
     <Content Include="Views\Activities\Details.cshtml" />
     <Content Include="Views\Activities\Index.cshtml" />
     <Content Include="Views\Activities\_CreateOrEdit.cshtml" />
-    <Content Include="Views\Shared\Copy of _Layout.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

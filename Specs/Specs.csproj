@@ -59,6 +59,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="00BasicGherkin\BasicGherkin.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BasicGherkin.feature</DependentUpon>
+    </Compile>
+    <Compile Include="00BasicGherkin\BasicGherkinSteps.cs" />
     <Compile Include="08AttributeOverloading\AttributeOverloading.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -147,6 +153,10 @@
     <Compile Include="01TestRunner\TestRunnerDemoSteps.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="00BasicGherkin\BasicGherkin.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>BasicGherkin.feature.cs</LastGenOutput>
+    </None>
     <None Include="app.config" />
     <None Include="08AttributeOverloading\AttributeOverloading.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
