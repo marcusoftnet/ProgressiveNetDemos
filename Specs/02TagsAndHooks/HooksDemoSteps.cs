@@ -1,5 +1,4 @@
-﻿using System;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 using NUnit.Framework;
 using TechTalk.SpecFlow;
 
@@ -28,7 +27,7 @@ namespace Specs.TagsAndHooks
             else
                 reportIndentation--;
 
-            report += string.Format("{0} {1}\n", new string('-', reportIndentation), text);
+            report += string.Format("{0}'{1}' was called\n", new string('-', reportIndentation), text);
         }
 
         [BeforeTestRun]
@@ -79,7 +78,7 @@ namespace Specs.TagsAndHooks
             Assert.That(_afterStepHookExecuted, Is.True);
             Report("AfterTestRun");
 
-            Debug.WriteLine(report);
+            //Debug.WriteLine(report);
         }
 
         [AfterFeature]

@@ -8,5 +8,6 @@ namespace ActivityLog.Models
         [Required]public string Name { get; set; }
         public string Contact { get; set; }
         public string Extra { get; set; }
+        public string Hallo { get; set; }
     }
 }

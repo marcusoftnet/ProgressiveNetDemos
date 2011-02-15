@@ -4,11 +4,11 @@ namespace ActivityLog.Models.Storage
 {
     public class ActivityLogContext : DbContext
     {
-        public DbSet<ActivityLog.Models.Activity> Activities { get; set; }
+        public DbSet<Activity> Activities { get; set; }
     
-        public DbSet<ActivityLog.Models.Person> People { get; set; }
+        public DbSet<Person> People { get; set; }
     
-        public DbSet<ActivityLog.Models.Customer> Customers { get; set; }
+        public DbSet<Customer> Customers { get; set; }
     
         public ActivityLogContext()
         {

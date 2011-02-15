@@ -65,6 +65,12 @@
       <DependentUpon>BasicGherkin.feature</DependentUpon>
     </Compile>
     <Compile Include="00BasicGherkin\BasicGherkinSteps.cs" />
+    <Compile Include="031ScenarioContext\ScenarioContextSteps.cs" />
+    <Compile Include="031ScenarioContext\ScenarioContext.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ScenarioContext.feature</DependentUpon>
+    </Compile>
     <Compile Include="08AttributeOverloading\AttributeOverloading.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -156,6 +162,10 @@
     <None Include="00BasicGherkin\BasicGherkin.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>BasicGherkin.feature.cs</LastGenOutput>
+    </None>
+    <None Include="031ScenarioContext\ScenarioContext.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ScenarioContext.feature.cs</LastGenOutput>
     </None>
     <None Include="app.config" />
     <None Include="08AttributeOverloading\AttributeOverloading.feature">
