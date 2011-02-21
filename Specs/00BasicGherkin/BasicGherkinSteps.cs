@@ -20,8 +20,7 @@ namespace Specs._00BasicGherkin
         private Application SUT;
         protected string returnValue { get; set; }
 
-
-        [Given(@"the intial state of the application is Running")]
+        [Given(@"the initial state of the application is Running")]
         public void InitialStateIsRunning()
         {
             SUT = new Application { State = "Running" };

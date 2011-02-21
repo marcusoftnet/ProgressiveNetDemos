@@ -31,7 +31,7 @@ namespace Specs._00BasicGherkin
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
             TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Showing basic gherkin syntax", "In order to see that gherkin is a very simple langauge\nAs a SpecFlow evangelist\nI" +
-                    " want to show that basic syntaxt", GenerationTargetLanguage.CSharp, ((string[])(null)));
+                    " want to show that basic syntax", GenerationTargetLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -61,7 +61,7 @@ namespace Specs._00BasicGherkin
 #line 6
 this.ScenarioSetup(scenarioInfo);
 #line 7
- testRunner.Given("the intial state of the application is Running");
+ testRunner.Given("the initial state of the application is Running");
 #line 8
  testRunner.When("I ask what the application state is");
 #line 9

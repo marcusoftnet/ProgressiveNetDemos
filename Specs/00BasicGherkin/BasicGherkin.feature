@@ -1,10 +1,10 @@
 ﻿Feature: Showing basic gherkin syntax
 	In order to see that gherkin is a very simple langauge
 	As a SpecFlow evangelist
-	I want to show that basic syntaxt
+	I want to show that basic syntax
 
 Scenario: Simple GWT
-	Given the intial state of the application is Running
+	Given the initial state of the application is Running
 	When I ask what the application state is
 	Then I should see Running as the answer
 

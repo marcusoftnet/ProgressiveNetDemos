@@ -91,6 +91,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\ActivityLog.sdf" />
     <Content Include="Content\bg-main-corner-sprite.png" />
     <Content Include="Content\bg-main.png" />
     <Content Include="Content\bg-nav-corner-sprite.png" />
@@ -127,7 +128,6 @@
     <Content Include="Views\Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Content\Images\" />
   </ItemGroup>
   <ItemGroup>
