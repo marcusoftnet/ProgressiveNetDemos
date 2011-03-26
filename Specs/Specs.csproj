@@ -71,6 +71,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ScenarioContext.feature</DependentUpon>
     </Compile>
+    <Compile Include="032FeatureContext\FeatureContextSteps.cs" />
+    <Compile Include="032FeatureContext\FeatureContextFeatures.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FeatureContextFeatures.feature</DependentUpon>
+    </Compile>
     <Compile Include="08AttributeOverloading\AttributeOverloading.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -167,6 +173,10 @@
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>ScenarioContext.feature.cs</LastGenOutput>
     </None>
+    <None Include="032FeatureContext\FeatureContextFeatures.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>FeatureContextFeatures.feature.cs</LastGenOutput>
+    </None>
     <None Include="app.config" />
     <None Include="08AttributeOverloading\AttributeOverloading.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
@@ -218,6 +228,7 @@
       <LastGenOutput>TestRunnerIsNotImportant.feature.cs</LastGenOutput>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
