@@ -118,6 +118,44 @@
     <Compile Include="11ContextInjection\FeatureWithASingleContextSteps.cs" />
     <Compile Include="11ContextInjection\FeatureWithMultipleContextsSteps.cs" />
     <Compile Include="11ContextInjection\FeatureWithNoContextSteps.cs" />
+    <Compile Include="12ScopedSteps\ScopedSteps.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ScopedSteps.feature</DependentUpon>
+    </Compile>
+    <Compile Include="12ScopedSteps\ScopedStepsSteps.cs" />
+    <Compile Include="12ScopedSteps\StepsWithScopeOnTag.cs" />
+    <Compile Include="30SpecFlowAssistDynamic\ComparingDynamicInstances.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ComparingDynamicInstances.feature</DependentUpon>
+    </Compile>
+    <Compile Include="30SpecFlowAssistDynamic\ComparingDynamicSets.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ComparingDynamicSets.feature</DependentUpon>
+    </Compile>
+    <Compile Include="30SpecFlowAssistDynamic\CreateDynamicSetsAndInstancesWithStepArgumentTransformation.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CreateDynamicSetsAndInstancesWithStepArgumentTransformation.feature</DependentUpon>
+    </Compile>
+    <Compile Include="30SpecFlowAssistDynamic\DynamicInstancesFromTable.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DynamicInstancesFromTable.feature</DependentUpon>
+    </Compile>
+    <Compile Include="30SpecFlowAssistDynamic\DynamicSetFromTable.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DynamicSetFromTable.feature</DependentUpon>
+    </Compile>
+    <Compile Include="30SpecFlowAssistDynamic\StepDefinitions\DynamicInstanceComparisionSteps.cs" />
+    <Compile Include="30SpecFlowAssistDynamic\StepDefinitions\DynamicInstanceCreationSteps.cs" />
+    <Compile Include="30SpecFlowAssistDynamic\StepDefinitions\DynamicSetComparisonSteps.cs" />
+    <Compile Include="30SpecFlowAssistDynamic\StepDefinitions\DynamicSetCreationSteps.cs" />
+    <Compile Include="30SpecFlowAssistDynamic\StepDefinitions\State.cs" />
+    <Compile Include="30SpecFlowAssistDynamic\StepDefinitions\StepArgumentTransformationSteps.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="03ScenarioOutline\ScenarioOutline.feature.cs">
       <AutoGen>True</AutoGen>
@@ -181,6 +219,30 @@
     <None Include="032FeatureContext\FeatureContextFeatures.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>FeatureContextFeatures.feature.cs</LastGenOutput>
+    </None>
+    <None Include="12ScopedSteps\ScopedSteps.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ScopedSteps.feature.cs</LastGenOutput>
+    </None>
+    <None Include="30SpecFlowAssistDynamic\ComparingDynamicInstances.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ComparingDynamicInstances.feature.cs</LastGenOutput>
+    </None>
+    <None Include="30SpecFlowAssistDynamic\ComparingDynamicSets.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>ComparingDynamicSets.feature.cs</LastGenOutput>
+    </None>
+    <None Include="30SpecFlowAssistDynamic\CreateDynamicSetsAndInstancesWithStepArgumentTransformation.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>CreateDynamicSetsAndInstancesWithStepArgumentTransformation.feature.cs</LastGenOutput>
+    </None>
+    <None Include="30SpecFlowAssistDynamic\DynamicInstancesFromTable.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>DynamicInstancesFromTable.feature.cs</LastGenOutput>
+    </None>
+    <None Include="30SpecFlowAssistDynamic\DynamicSetFromTable.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>DynamicSetFromTable.feature.cs</LastGenOutput>
     </None>
     <None Include="app.config" />
     <None Include="08AttributeOverloading\AttributeOverloading.feature">

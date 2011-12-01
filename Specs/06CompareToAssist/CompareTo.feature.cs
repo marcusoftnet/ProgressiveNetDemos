@@ -70,7 +70,7 @@ namespace Specs._06CompareToAssist
         public virtual void CompareToInstance()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("CompareToInstance", ((string[])(null)));
-#line 8
+#line 6
 this.ScenarioSetup(scenarioInfo);
 #line hidden
             TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
@@ -85,7 +85,7 @@ this.ScenarioSetup(scenarioInfo);
             table1.AddRow(new string[] {
                         "Birth date",
                         "1972-10-09"});
-#line 9
+#line 7
  testRunner.Given("I have the following person", ((string)(null)), table1);
 #line hidden
             TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
@@ -99,8 +99,8 @@ this.ScenarioSetup(scenarioInfo);
                         "Butch"});
             table2.AddRow(new string[] {
                         "BirthDate",
-                        "10/9/1972 12:00:00 AM"});
-#line 14
+                        "1972-10-09"});
+#line 12
  testRunner.Then("CompareToInstance should match this guy", ((string)(null)), table2);
 #line hidden
             TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
@@ -111,8 +111,8 @@ this.ScenarioSetup(scenarioInfo);
                         "Marcus"});
             table3.AddRow(new string[] {
                         "BirthDate",
-                        "10/9/1972 12:00:00 AM"});
-#line 19
+                        "1972-10-09"});
+#line 17
  testRunner.And("CompareToInstance should match this guy", ((string)(null)), table3);
 #line hidden
             TechTalk.SpecFlow.Table table4 = new TechTalk.SpecFlow.Table(new string[] {
@@ -126,8 +126,8 @@ this.ScenarioSetup(scenarioInfo);
                         "very cool"});
             table4.AddRow(new string[] {
                         "BirthDate",
-                        "10/9/1974 12:00:00 AM"});
-#line 23
+                        "1972-10-09"});
+#line 21
  testRunner.But("CompareToInstance should not match this guy", ((string)(null)), table4);
 #line hidden
             this.ScenarioCleanup();
@@ -138,26 +138,30 @@ this.ScenarioSetup(scenarioInfo);
         public virtual void CompareToSet()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("CompareToSet", ((string[])(null)));
-#line 31
+#line 29
 this.ScenarioSetup(scenarioInfo);
 #line hidden
             TechTalk.SpecFlow.Table table5 = new TechTalk.SpecFlow.Table(new string[] {
                         "Name",
                         "Style",
-                        "Birth date"});
+                        "Birth date",
+                        "Salary"});
             table5.AddRow(new string[] {
                         "Marcus",
                         "Cool",
-                        "1972-10-09"});
+                        "1972-10-09",
+                        "100"});
             table5.AddRow(new string[] {
                         "Anders",
                         "Butch",
-                        "1977-01-01"});
+                        "1977-01-01",
+                        "100000"});
             table5.AddRow(new string[] {
                         "Jocke",
                         "Soft",
-                        "1974-04-04"});
-#line 32
+                        "1974-04-04",
+                        "A lot, ok?"});
+#line 30
  testRunner.Given("I have the following persons using assist", ((string)(null)), table5);
 #line hidden
             TechTalk.SpecFlow.Table table6 = new TechTalk.SpecFlow.Table(new string[] {
@@ -167,16 +171,16 @@ this.ScenarioSetup(scenarioInfo);
             table6.AddRow(new string[] {
                         "Marcus",
                         "Cool",
-                        "10/9/1972 12:00:00 AM"});
+                        "1972-10-09"});
             table6.AddRow(new string[] {
                         "Anders",
                         "Butch",
-                        "1/1/1977 12:00:00 AM"});
+                        "1977-01-01"});
             table6.AddRow(new string[] {
                         "Jocke",
                         "Soft",
-                        "4/4/1974 12:00:00 AM"});
-#line 37
+                        "1974-04-04"});
+#line 35
  testRunner.Then("CompareToSet should match this", ((string)(null)), table6);
 #line hidden
             TechTalk.SpecFlow.Table table7 = new TechTalk.SpecFlow.Table(new string[] {
@@ -186,12 +190,12 @@ this.ScenarioSetup(scenarioInfo);
             table7.AddRow(new string[] {
                         "Marcus",
                         "Cool",
-                        "10/9/1972 12:00:00 AM"});
+                        "1972-10-09"});
             table7.AddRow(new string[] {
                         "Anders",
                         "Butch",
-                        "1/1/1977 12:00:00 AM"});
-#line 42
+                        "1977-01-01"});
+#line 40
  testRunner.But("CompareToSet should not match this", ((string)(null)), table7);
 #line hidden
             this.ScenarioCleanup();
