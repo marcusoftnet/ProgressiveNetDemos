@@ -11,5 +11,5 @@ Scenario: Log in
 
 Scenario: Do something meaningful
 	Given I am logged in
-	When I dosomething meaningful
+	When I do something meaningful
 	Then I should get rewarded

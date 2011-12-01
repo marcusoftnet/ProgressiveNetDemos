@@ -46,7 +46,7 @@ namespace Specs.CallingStepsFromSteps
             incStepCount();
         }
 
-        [When(@"I dosomething meaningful")]
+        [When(@"I do something meaningful")]
         public void WhenIDosomethingMeaningful()
         {
             incStepCount();
